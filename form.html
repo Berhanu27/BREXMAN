@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML Pages</title>
+    <style>
+        body {
+            background-color: rgb(230, 233, 230);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px; /* Add padding to the body */
+        }
+
+        .chal {
+            background-color: rgb(13, 94, 96);
+            width: 400px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            color: white;
+            text-align: left;
+            position: relative; /* Allows for better positioning if needed */
+        }
+
+        label {
+            font-size: 14px;
+            margin: 10px 0 5px;
+            display: block; /* Stack labels vertically */
+        }
+
+        input {
+            width: calc(100% - 22px); /* Full width minus padding */
+            height: 35px;
+            background-color: rgb(206, 245, 179);
+            color: black;
+            border-radius: 10px;
+            padding: 5px 10px;
+            border: 2px solid rgb(0, 137, 190);
+            margin-bottom: 15px; /* Space between inputs */
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            height: 40px;
+            background-color: rgb(22, 240, 189);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: rgb(18, 200, 180);
+        }
+    </style>
+</head>
+<body>
+    <div class="chal">
+        <h2>Registration Form</h2>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" placeholder="Enter your first name">
+        
+        <label for="middle-name">Middle Name</label>
+        <input type="text" id="middle-name" placeholder="Enter your middle name">
+        
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" placeholder="Enter your last name">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="someone@gmail.com">
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password">
+        
+        <label for="phone">Phone No</label>
+        <input type="tel" id="phone" placeholder="Enter phone number">
+        
+        <button type="submit">Submit</button>
+    </div>
+</body>
+</html>

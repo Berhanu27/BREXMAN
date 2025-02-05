@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .gallery-item {
+            text-align: center; /* Center the text */
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Crop the image to fit */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .caption {
+            margin-top: 8px;
+            font-size: 1em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Beautiful Forest Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="./Images/forest.jpeg" alt="Forest 1">
+            <div class="caption">A serene view of the forest.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="./Images/forest2.jpg" alt="Forest 2">
+            <div class="caption">Lush greenery and sunlight.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="./Images/forest3.jpg" alt="Forest 3">
+            <div class="caption">A peaceful forest path.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="./Images/forest4.jpg" alt="Forest 4">
+            <div class="caption">Tall trees reaching for the sky.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="./Images/forest5.jpg" alt="Forest 5">
+            <div class="caption">A tranquil scene in nature.</div>
+        </div>
+    </div>
+</body>
+</html>

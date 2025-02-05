@@ -1,0 +1,127 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-y: hidden;
+}
+
+/* Header styles */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e8491d;
+}
+
+/* Aside styles */
+aside {
+    width: 200px;
+    background: #8aa7b9;
+    color: #ffffff;
+    padding: 1rem;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin: 15px 0;
+}
+
+aside ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+aside ul li a:hover {
+    color: #e8491d;
+}
+
+/* Main content styles */
+main {
+    margin-left: 250px; /* space for aside */
+    padding: 20px;
+    background: #ffffff;
+    height: 400px;
+    width: 80%;
+}
+
+/* Footer styles */
+footer {
+    background: rgb(59, 57, 57);
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0; /* Stick it to the bottom */
+    width: 100%; /* Make it span the entire width */
+    z-index: 100; /* Ensure it appears above other elements */
+}
+.search-container {
+    text-align: center;
+    margin: 10px 0;
+}
+.search-container input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search-container button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #71aded;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    aside {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    main {
+        margin-left: 0;
+    }
+}
